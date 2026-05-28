@@ -1,0 +1,172 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: monotserrat;
+    background-color: linear-gradient(150deg, #5fb9e9, #662f7a);
+    height: 100vh;
+}
+
+.formularioInicioSesion{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: #5cd2e4;
+    border-radius: 10px;
+}
+
+.formularioInicioSesion h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #5cd2e4;
+}
+
+.formularioInicioSesion form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.formularioInicioSesion .username-login{
+    position: relative;
+    border-bottom: 2px solid #f0f0f0;
+    margin: 30px 0;
+}
+
+.formularioInicioSesion .username-login input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.formularioInicioSesion .username-login label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #000000;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.formularioInicioSesion .password-login{
+    position: relative;
+    border-bottom: 2px solid #ffffff;
+    margin: 30px 0;
+}
+
+.formularioInicioSesion .password-login input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.formularioInicioSesion .password-login label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #000000;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.formularioInicioSesion .username-login span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #b522e6;
+}
+
+.formularioInicioSesion .password-login span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #662f7a;
+    transition: 0.5s;
+}
+
+.formularioInicioSesion .username-login input:focus ~ label,
+.formularioInicioSesion .username-login input:valid ~ label{
+    top: -5px;
+    color: #84176c;
+}  
+
+.formularioInicioSesion .username-login input:focus ~ span::before,
+.formularioInicioSesion .username-login input:valid ~ span::before{
+    width: 100%;
+}
+
+.formularioInicioSesion .password-login input:focus ~ label,
+.formularioInicioSesion .password-login input:valid ~ label{
+    top: -5px;
+    color: #84176c;
+}
+
+.formularioInicioSesion .password-login input:focus ~ span::before,
+.formularioInicioSesion .password-login input:valid ~ span::before{
+    width: 100%;
+}
+
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formularioInicioSesion .forgot-password{
+    margin: -5px 0 20px 5px;
+    display: flex;
+    cursor: pointer;
+}
+
+.formularioInicioSesion .forgot-password a:hover{
+    text-decoration: underline;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #7A2F2F;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    border-color: #7A2F2F;
+    transition: 0.5s;
+}
+
+.registrarse{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+}
+
+.registrarse a{
+    color: #000dff;
+    text-decoration: none;
+}
+
+.registrarse a:hover{
+    text-decoration: underline;
+}
